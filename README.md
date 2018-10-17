@@ -1,7 +1,7 @@
 # GraphQL.NetCore
 Using GraphQL in .Net Core app
 
-##GraphiQL
+## GraphiQL
 http://facebook.github.io/graphql/October2016/
 
 ```text
@@ -45,7 +45,7 @@ http://facebook.github.io/graphql/October2016/
   }
 }
 ```
-###Aliases
+### Aliases
 ```text
 query
 {
@@ -69,7 +69,7 @@ query
   }
 }
 ```
-###Fragments
+### Fragments
 ```text
 query
 {
@@ -87,7 +87,7 @@ fragment comparisonFields on Account {
     cppiPercentage
 }
 ```
-###Variables
+### Variables
 ```text
 query q1($accountId: Int!) # or with default value Int = 10
 {
@@ -134,7 +134,7 @@ query q1($accountId: Int!) # or with default value Int = 10
   "accountId": 1
 }
 ```
-###Directives
+### Directives
 ```text
 query q1($accountId: Int!, $withHistory: Boolean!)
 {
@@ -184,7 +184,7 @@ query q1($accountId: Int!, $withHistory: Boolean!)
   "withHistory": false
 }
 ```
-###Mutation
+### Mutation
 ```text
 mutation m1($accountId: Int!, $cashFlow: Float, $changeReason: FloorChangeReason!)
 {
@@ -205,7 +205,7 @@ mutation m1($accountId: Int!, $cashFlow: Float, $changeReason: FloorChangeReason
   "changeReason": "DEPOSIT"
 }
 ```
-##Postman
+## Postman
 raw, application/json
 
 ```json
