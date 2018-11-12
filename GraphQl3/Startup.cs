@@ -38,6 +38,7 @@ namespace GraphQl3
             services.AddSingleton<ICppiFloorService, CppiFloorService>();
 
             services.AddMvc();
+                //.SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

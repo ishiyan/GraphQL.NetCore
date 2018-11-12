@@ -1,0 +1,31 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: qraphqlnetcore
+  labels:
+    app: qraphqlnetcore
+spec:
+  replicas: {{ .Values.replicaCounts.qraphqlnetcore }}
+  selector:
+    matchLabels:
+      app: qraphqlnetcore
+  template:
+    metadata:
+      labels:
+        app: qraphqlnetcore
+    spec:
+      containers:
+      - name: "{{ .Chart.Name }}"
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        ports:
+        - containerPort: 80
+        env:
+        - name: ASPNETCORE_ENVIRONMENT
+          value: "{{ .Values.aspnetcore.environment }}"
+        resources:
+          requests:
+            cpu: "500m"
+            memory: "1Gi"
+          limits:
+            cpu: "1"
+            memory: "16Gi"

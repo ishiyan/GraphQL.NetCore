@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: qraphql-netcore
+  labels:
+    app: f5lb
+data:
+  servicename: qraphqlnetcore
+  serviceport: "80"
+  ip: ""
+  port: "80"

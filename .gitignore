@@ -12,6 +12,13 @@
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
+GraphQl3/obj
+GraphQl3/bin
+GraphQl3/.vs
+GraphQlClient/obj
+GraphQlClient/bin
+GraphQlClient/.vs
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/

@@ -1,0 +1,12 @@
+version: '3.2'
+
+services:
+  graphqlnetcore:
+    build:
+      context: .
+      dockerfile: GraphQl3.Dockerfile
+    ports:
+    - target: 80
+      published: 5000
+    environment:
+    - ASPNETCORE_ENVIRONMENT=Production
