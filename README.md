@@ -1,6 +1,8 @@
 # GraphQL.NetCore
 Using GraphQL in .Net Core app
 
+[![Build Status](https://mbrane.visualstudio.com/GraphQL.NetCore/_apis/build/status/ishiyan.GraphQL.NetCore)](https://mbrane.visualstudio.com/GraphQL.NetCore/_build/latest?definitionId=8)
+
 ## GraphiQL
 http://facebook.github.io/graphql/October2016/
 
